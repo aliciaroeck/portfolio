@@ -134,6 +134,37 @@ img.portfolio-img {
   text-align: center;
 }
 
+.social a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: .3s linear;
+}
+
+a.text-email {
+  font-size: 14px;
+}
+
+a.text-email:hover {
+  text-decoration: underline;
+}
+
+a.git {
+  margin-left: 10px;
+}
+
+a.git:hover {
+  transform: scale(.5);
+}
+
+a.linkedin {
+  margin-left: 10px;
+}
+
+a.email {
+  margin-left: 10px;
+}
+
 /* MEDIA QUERY */
 @media screen and (max-width: 900px) {
   .intro-title {
