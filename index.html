@@ -11,19 +11,31 @@
         <!-- font-awesome and jquery -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"defer></script>
-        
-        <!-- Internal JS -->
+
+        <!-- Materialize -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+    
+    <!-- Internal JS -->
     <script src="public/app.js"defer></script>
 </head>
 <body>
-    <header>
-        <div class="sidenav">
+    <header id="top">
+        <div class="sidenavigation">
             <img class="portfolio-img" src="public/images/self-portrait.png" alt="Self Portrait">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skills</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+            <a href="#top">Home</a>
+            <a href="#about-me">About</a>
+            <a href="#my-skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#my-contact">Contact</a>
         </div>
             <!-- typing animation -->
         <section class="introduction">
@@ -36,29 +48,79 @@
     
     <main>
             <!-- About Me -->
-        <section class="section about">
+        <section id="about-me" class="section about">
             <h1 class="about-title title">About Me.</h1>
             <p class="about-context context">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ut enim nulla ducimus iste ipsum esse est mollitia odit obcaecati? Deserunt, totam. Distinctio, facere esse? Placeat tenetur ratione nulla dicta!</p>
         </section>
 
             <!-- Skills -->
-        <section class="section skills">
+        <section id="my-skills" class="section skills">
             <h1 class="skills-title title">Skills</h1>
             <p class="skills-context context">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ut enim nulla ducimus iste ipsum esse est mollitia odit obcaecati? Deserunt, totam. Distinctio, facere esse? Placeat tenetur ratione nulla dicta!</p>
         </section>
 
             <!-- Portfolio -->
-        <section class="section">
+        <section id="portfolio" class="section">
             <h1 class="portfolio-title title">Portfolio</h1>
-            <p class="portfolio-context context">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ut enim nulla ducimus iste ipsum esse est mollitia odit obcaecati? Deserunt, totam. Distinctio, facere esse? Placeat tenetur ratione nulla dicta!</p>
+            <div class="portfolio-content">
+
+                <!-- Project one: Trail Legs-->
+                <div class="card hoverable" style="overflow: hidden;">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="public/images/trail-legs-2.png">
+                    </div>
+                    <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Trail Legs<i class="material-icons right">more_vert</i></span>
+                    <p><a href="https://trail-legs.herokuapp.com/" target="_blank">View Website</a></p>
+                    </div>
+                    <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Trail Legs<i class="material-icons right">close</i></span>
+                    <p>I built this website with one other person in one week. My role was planning, designing, building out user auth, and building out a majority of the front-end css and .ejs templates.</p>
+                    <p>Technology: Express, Mongoose, Node.js, EJS</p>
+                    </div>
+                </div>
+
+                    <!-- Project two: Wayfarer -->
+                <div class="card hoverable" style="overflow: hidden;">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator wayfarer" src="public/images/wayfarer-2.png">
+                    </div>
+                    <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Wayfarer<i class="material-icons right">more_vert</i></span>
+                    <p><a href="https://wayfarer-acn.herokuapp.com/" target="_blank">View Website</a></p>
+                    </div>
+                    <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Wayfarer<i class="material-icons right">close</i></span>
+                    <p>I built this website with two other person in one week. We had a client that gave us specifications. My role was leading planning, designing, building out a majority of the front-end css, and implementing Pillow for photo uploads</p>
+                    <p>Technology/Languages: Django, Python, Bootstrap, Jinja, Pillow</p>
+                    </div>
+                </div>
+
+                    <!-- Project three: Plant People -->
+                <div class="card hoverable" style="overflow: hidden;">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="public/images/trail-legs.png">
+                    </div>
+                    <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Trail Legs<i class="material-icons right">more_vert</i></span>
+                    <p><a href="https://trail-legs.herokuapp.com/" target="_blank">View Website</a></p>
+                    </div>
+                    <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Trail Legs<i class="material-icons right">close</i></span>
+                    <p>I built this website with one other person in one week. My role was planning, designing, building out user auth, and building out a majority of the front-end css and .ejs templates.</p>
+                    <p>Technology: Express, Mongoose, Node.js, EJS</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
             <!-- contact -->
-        <section class="contact">
+        <section id="my-contact" class="contact">
             <h1 class="contact-title title"></h1>
             <p>contact stuff</p>
         </section>
     </main>
+
 </body>
 
 </html>

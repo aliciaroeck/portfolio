@@ -7,7 +7,7 @@
 
 body {
   height: 100%;
-  margin-left: 250px;
+  margin-left: 250px !important;
 }
 
 /* Typewriter */
@@ -28,10 +28,11 @@ body {
 
 .typewrite {
   color:#fff;
+  font-size: 25px;
 }
 
 /* The sidebar menu */
-.sidenav {
+.sidenavigation {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 250px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -47,7 +48,7 @@ body {
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sidenavigation a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
@@ -56,7 +57,7 @@ body {
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenavigation a:hover {
   color: #f1f1f1;
 }
 
@@ -82,7 +83,7 @@ img.portfolio-img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 200px;
+  padding: 200px !important;
 }
 
 .title {
@@ -93,10 +94,6 @@ img.portfolio-img {
 /* About Me */
 .about {
   color: #818181;
-}
-
-.about-title {
-
 }
 
 /* Skills */
@@ -114,6 +111,17 @@ img.portfolio-img {
   padding: 100px 200px;
   width: auto;
 }
+
+.card .card-image {
+  height: 300px;
+  overflow: scroll;
+}
+
+/* .portfolio-content {
+  display: flex;
+  flex-direction: row, wrap;
+} */
+
 
 /* MEDIA QUERY */
 @media screen and (max-width: 900px) {
@@ -146,6 +154,6 @@ img.portfolio-img {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenavigationigation {padding-top: 15px;}
+  .sidenavigationigation a {font-size: 18px;}
 }
