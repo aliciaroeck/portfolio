@@ -36,9 +36,8 @@ body {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 250px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1;
   left: 0;
-  background-color: #515966; /* Black */
+  background-color: white; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
   display: flex;
@@ -52,7 +51,7 @@ body {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: lightgray;
+  color: gray;
   display: block;
 }
 
@@ -69,7 +68,7 @@ body {
 
 img.portfolio-img {
   border-radius: 150px;
-  border: solid 4px white;
+  border: solid 4px lightgray;
   height: 25vh;
   width: 25vh;
   object-fit: contain, cover;
