@@ -164,6 +164,16 @@ a.email {
   margin-left: 10px;
 }
 
+a.ga-link {
+  text-decoration: none;
+  color: #BE7C6C;
+}
+
+a.readme {
+  text-decoration: none;
+  color: #BE7C6C;
+}
+
 /* MEDIA QUERY */
 @media screen and (max-width: 900px) {
   .intro-title {
