@@ -46,6 +46,28 @@ body {
   justify-content: center;
 }
 
+.nav-contact {
+  display: flex;
+  flex-direction: row;
+  margin-top: 150px;
+}
+
+a.nav-git i {
+  font-size: 20px;
+}
+
+a.nav-linkedin i {
+  font-size: 20px;
+}
+
+a.nav-email i {
+  font-size: 20px;
+}
+
+a.nav-resume i {
+  font-size: 20px;
+}
+
 /* The navigation menu links */
 .sidenavigation a {
   padding: 6px 8px 6px 16px;
@@ -152,15 +174,15 @@ a.git {
   margin-left: 10px;
 }
 
-a.git:hover {
-  transform: scale(.5);
-}
-
 a.linkedin {
   margin-left: 10px;
 }
 
 a.email {
+  margin-left: 10px;
+}
+
+a.resume {
   margin-left: 10px;
 }
 
