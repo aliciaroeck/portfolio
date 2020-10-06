@@ -56,7 +56,7 @@ body {
 }
 
 .intro-title {
-  font-size: 50px;
+  font-size: 80px;
   font-weight: 100;
   color: #000000;
   font-family: 'Cormorant', serif;
@@ -64,7 +64,7 @@ body {
 
 .typewrite {
   color: #899093;
-  font-size: 20px;
+  font-size: 30px;
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -86,42 +86,6 @@ body {
   height: 600px;
 }
 
-.nav-contact {
-  display: flex;
-  flex-direction: row;
-  margin-top: 150px;
-}
-
-a.nav-git i {
-  font-size: 20px;
-}
-
-a.nav-linkedin i {
-  font-size: 20px;
-}
-
-a.nav-email i {
-  font-size: 20px;
-}
-
-a.nav-resume i {
-  font-size: 20px;
-}
-
-/* The navigation menu links */
-.sidenavigation a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: gray;
-  display: block;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenavigation a:hover {
-  color: #f1f1f1;
-}
-
 .main {
   margin-left: 160px; /* Same as the width of the sidebar */
   padding: 0px 10px;
@@ -139,21 +103,41 @@ img.portfolio-img {
 
 .section {
   width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 200px !important;
+  padding: 150px 150px 150px 150px !important;
 }
 
 .title {
-  margin-bottom: 20px;
-  font-size: 36px;
+  margin-bottom: 5px;
+  font-family: 'Cormorant', serif;
+  font-size: 60px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* About Me */
+.about-me-section {
+  display: flex;
+  flex-direction: inline;
+}
+
+.about-line-drawing img {
+  position: absolute;
+  width: 550px;
+  height: 600px;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
 .about {
-  color: #818181;
+  color: #000000;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.about-context {
+  background-color: #a5b0b6;
+  padding: 80px 100px 80px 200px;
+  text-align: right;
+  margin-left: 220px;
 }
 
 /* Skills */
