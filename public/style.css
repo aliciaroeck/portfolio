@@ -9,10 +9,13 @@ body {
   height: 100%;
 }
 
+/* Header */
+
 #top {
   background-color: #ece4de;
   width: 100%;
   padding: 10px 40px 100px 40px;
+  margin-bottom: 50px;
 }
 
 .upper-header {
@@ -74,7 +77,7 @@ body {
   justify-content: space-between;
 }
 
-/* Line drawing */
+/* Line drawings */
 .line-drawing {
   display: flex;
   justify-content: flex-end;
@@ -86,35 +89,32 @@ body {
   height: 600px;
 }
 
-.main {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
+.skills-drawing {
+  position: absolute;
+  min-width: 600px;
+  min-height: 600px;
+  margin-left: 500px;
 }
 
-img.portfolio-img {
-  border-radius: 150px;
-  border: solid 4px lightgray;
-  height: 25vh;
-  width: 25vh;
-  object-fit: contain, cover;
-  background-color: #f3e1db;
-  margin-bottom: 40px;
-}
-
+/* All Sections */
 .section {
   width: auto;
-  padding: 150px 150px 150px 150px !important;
+  padding: 150px;
+  margin: 50px 0;
 }
 
 .title {
   margin-bottom: 5px;
   font-family: 'Cormorant', serif;
   font-size: 60px;
+}
+
+/* About Me */
+.about-title {
   display: flex;
   justify-content: flex-end;
 }
 
-/* About Me */
 .about-me-section {
   display: flex;
   flex-direction: inline;
@@ -136,14 +136,45 @@ img.portfolio-img {
 .about-context {
   background-color: #a5b0b6;
   padding: 80px 100px 80px 200px;
+  min-width: 600px;
   text-align: right;
   margin-left: 220px;
 }
 
 /* Skills */
+.skills-title {
+  display: flex;
+}
+
+.skills-context {
+  background-color: #d6c2a7;
+  padding: 80px 100px 80px 200px;
+  min-width: 600px;
+  max-width: 600px;
+  margin-right: 220px;
+}
+
 .skills {
-  background-color: #f3e1db;
-  color: #818181;
+  color: #000000;
+}
+
+.skills-content-photo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Portfolio */
+
+.portfolio-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.portfolio-title {
+  color: #000000;
+  text-align: center;
 }
 
 .card .card-image {
@@ -151,15 +182,15 @@ img.portfolio-img {
   overflow: scroll;
 }
 
-/* Portfolio */
-
-.portfolio-title {
-  color: #818181;
+.card {
+  max-width: 300px;
+  min-width: 300px;
+  margin-right: 15px;
 }
 
 /* Contacts */
 .contact {
-  background-color: #404853;
+  background-color: #222222;
   display: flex;
   flex-direction: column;
   padding: 80px 200px;
@@ -220,15 +251,84 @@ a.readme {
 }
 
 /* MEDIA QUERY */
+
 @media screen and (max-width: 900px) {
+  /* Drawings */
+  .line-drawing {
+    display: none;
+  }
+
+  .about-line-drawing {
+    display: none;
+  }
+
+  .skills-drawing {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    min-width: 480px;
+  }
+
+  /* Top Header */
+  .lower-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+  }
+
+  .introduction {
+    padding: 10px;
+  }
+
+  #top {
+    padding: 5px;
+  }
+
   .intro-title {
-    font-size: 20px;
+    font-size: 50px;
     white-space: nowrap;
   }
 
   .typewrite {
-    font-size: 15px;
+    font-size: 20px;
     white-space: nowrap;
+  }
+
+  /* Drawings */
+  .line-drawing {
+    display: none;
+  }
+
+  .about-line-drawing {
+    display: none;
+  }
+
+  /* About */
+  .section {
+    padding: 0;
+    margin: 0;
+    max-width: 480px;
+  }
+
+  .title {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .about-context {
+    background-color: #a5b0b6;
+    padding: 100px;
+    margin-left: 0;
+    margin: 0;
+    min-width: 480px;
+    font-size: 12px;
   }
 
   .title {
