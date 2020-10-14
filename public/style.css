@@ -9,6 +9,23 @@ body {
   height: 100%;
 }
 
+.social-right {
+  display: flex;
+  flex-direction: column;
+  right: calc(5vw - 12px);
+  top: calc(10vw - 50px);
+  position: fixed;
+  z-index: -1;
+}
+
+.social-right a {
+  margin: 10px 5px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  color: #d5caaf;
+  font-size: 20px;
+}
+
 /* Header */
 
 #top {
